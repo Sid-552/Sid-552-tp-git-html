@@ -1,0 +1,9 @@
+# .gitignore
+.DS_Store
+Thumbs.db
+*.log
+.vscode/settings.json
+git add .
+git status
+git commit -m "feat: initial HTML/CSS/JS site with navbar and hero section"
+git log --oneline
