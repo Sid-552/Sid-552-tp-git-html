@@ -9,10 +9,10 @@
 //    if (!email || typeof email !== 'string') return false;
 //    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
 //}
-// BUG VOLONTAIRE : on a oublie le test du @
+// CORRECTION
 function validateEmail(email) {
-if (!email || typeof email !== 'string') return false;
-return email.includes('.'); // INCORRECT : accepte 'userexample.com'
+    if (!email || typeof email !== 'string') return false;
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
 }
 /**
 * Valide un message de formulaire
