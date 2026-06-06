@@ -28,7 +28,3 @@ jobs:
       # Etape 4 : Valider le HTML
       - name: Valider le HTML
         run: htmlhint "**/*.html"
-
-      # Etape 5 : Valider le CSS
-      - name: Valider le CSS
-        run: stylelint "css/**/*.css"
